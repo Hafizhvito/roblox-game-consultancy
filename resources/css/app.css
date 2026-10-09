@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap');
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@theme {
+  --color-cream: #FBF7F2;
+  --color-peach: #F9D5C5;
+  --color-mint: #CFE8DC;
+  --color-lavender: #DCD3F0;
+  --color-butter: #F8EBB8;
+  --color-sky: #CFE3F3;
+  --color-ink: #2B2A33;
+  --color-ink-soft: #5B5963;
+  
+  --font-display: 'Fraunces', serif;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FBF7F2;
+    color: #2B2A33;
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Fraunces', serif;
+  }
+  :focus-visible {
+    outline: 2px solid #DCD3F0;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@keyframes fadeRise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-rise {
+  animation: fadeRise 0.5s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
