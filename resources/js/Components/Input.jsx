@@ -126,7 +126,7 @@ export function Select({
           required={required}
           aria-invalid={!!error}
           aria-describedby={error ? `${name}-error` : undefined}
-          className={`w-full rounded-xl border bg-white px-4 py-3 text-sm text-ink transition-colors focus:border-lavender focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender/40 ${
+          className={`w-full rounded-xl border bg-white pl-4 pr-10 py-3 text-sm text-ink transition-colors focus:border-lavender focus:bg-white focus:outline-none focus:ring-2 focus:ring-lavender/40 ${
             error ? 'border-red-400 bg-red-50/20' : 'border-ink/15 hover:border-ink/30'
           }`}
           {...props}

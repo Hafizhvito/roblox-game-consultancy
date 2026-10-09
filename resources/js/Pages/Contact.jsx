@@ -51,7 +51,7 @@ export default function Contact({ businessEmail, businessWhatsapp }) {
 
   const projectTypeOptions = [
     { value: 'game-concept', label: 'Game Concept & Design' },
-    { value: 'scripting', label: 'Luau Scripting & Architecture Review' },
+    { value: 'scripting', label: 'Luau Scripting & Architecture' },
     { value: 'monetisation', label: 'Monetisation & Economy Modeling' },
     { value: 'ui-ux', label: 'UI/UX Design for Roblox' },
     { value: 'launch', label: 'Launch & Live-Ops Advisory' },
