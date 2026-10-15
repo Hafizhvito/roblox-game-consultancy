@@ -17,7 +17,7 @@ class PackageFactory extends Factory
             'slug'           => Str::slug($name),
             'name'           => ucfirst($name),
             'tagline'        => fake()->sentence(),
-            'price_idr_from' => fake()->randomElement([1500000, 3000000, 5000000, 10000000]),
+            'price_idr_from' => fake()->randomElement([500000, 2500000, 5000000, 7500000]),
             'description'    => fake()->paragraph(),
             'features'       => [fake()->sentence(), fake()->sentence(), fake()->sentence()],
             'cta_label'      => 'Get started',

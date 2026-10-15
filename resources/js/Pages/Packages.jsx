@@ -169,6 +169,29 @@ export default function Packages({ packages = [] }) {
             );
           })}
         </div>
+
+        {/* Assistant recommendation prompt */}
+        <div className="mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-3">
+          <span className="text-sm text-ink-soft">
+            Not sure which package fits?
+          </span>
+          <Button
+            type="button"
+            variant="secondary"
+            size="sm"
+            onClick={() => {
+              if (typeof window !== 'undefined') {
+                window.dispatchEvent(
+                  new CustomEvent('open-chat', {
+                    detail: { prefill: 'Which package fits my project?' },
+                  })
+                );
+              }
+            }}
+          >
+            Ask the assistant
+          </Button>
+        </div>
       </Section>
 
       {/* ── PLANNED MICRO-SAAS TOOLING: ECONOMY STUDIO PRO ── */}

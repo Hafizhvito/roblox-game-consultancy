@@ -20,7 +20,7 @@
             <div class="form-group">
                 <label for="price_idr_from">Starting Price (IDR Number Only)</label>
                 <input type="number" id="price_idr_from" name="price_idr_from" value="{{ old('price_idr_from', $package->price_idr_from) }}" required min="0" step="50000">
-                <small style="color: #5B5963;">e.g., 1500000 displays as Rp 1.500.000</small>
+                <small style="color: #5B5963;">e.g., 500000 displays as Rp 500.000</small>
                 @error('price_idr_from') <div class="error-msg">{{ $message }}</div> @enderror
             </div>
         </div>

@@ -36,8 +36,8 @@ export default function Contact({ businessEmail, businessWhatsapp }) {
 
       if (packageParam) {
         if (packageParam === 'starter') setData('budget_range', 'under-2m');
-        else if (packageParam === 'studio') setData('budget_range', '5m-15m');
-        else if (packageParam === 'brand') setData('budget_range', 'over-15m');
+        else if (packageParam === 'studio') setData('budget_range', '2m-5m');
+        else if (packageParam === 'brand') setData('budget_range', '5m-15m');
       }
     }
   }, []);
@@ -60,9 +60,9 @@ export default function Contact({ businessEmail, businessWhatsapp }) {
 
   const budgetOptions = [
     { value: 'under-2m', label: 'Under Rp 2.000.000 (~$125 USD) (Starter scope)' },
-    { value: '2m-5m', label: 'Rp 2.000.000 to Rp 5.000.000 (~$125 to $350 USD)' },
-    { value: '5m-15m', label: 'Rp 5.000.000 to Rp 15.000.000 (~$350 to $1,000 USD) (Studio scope)' },
-    { value: 'over-15m', label: 'Over Rp 15.000.000 (~$1,000+ USD) (Brand scope)' },
+    { value: '2m-5m', label: 'Rp 2.000.000 to Rp 5.000.000 (~$125 to $315 USD) (Studio scope)' },
+    { value: '5m-15m', label: 'Rp 5.000.000 to Rp 15.000.000 (~$315 to $950 USD) (Brand scope)' },
+    { value: 'over-15m', label: 'Over Rp 15.000.000 (~$950+ USD) (Large-scale custom)' },
     { value: 'not-sure', label: 'Not sure yet (Need estimation)' },
   ];
 

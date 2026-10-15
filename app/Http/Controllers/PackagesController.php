@@ -16,7 +16,7 @@ class PackagesController extends Controller
             'packages' => $packages,
             'meta' => [
                 'title'       => 'Packages & Pricing: ' . config('business.name'),
-                'description' => 'Three clear consulting tiers to fit your project stage. Starting from Rp 1.500.000.',
+                'description' => 'Three clear consulting tiers to fit your project stage. Starting from Rp 500.000.',
             ],
         ]);
     }

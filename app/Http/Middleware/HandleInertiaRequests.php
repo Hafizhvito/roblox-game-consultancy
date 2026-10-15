@@ -46,6 +46,7 @@ class HandleInertiaRequests extends Middleware
                 'tagline'          => config('business.tagline'),
                 'address'          => config('business.address'),
             ],
+            'turnstile_site_key' => config('services.turnstile.site_key'),
             'flash' => [
                 'success' => fn () => $request->session()->get('success'),
                 'error'   => fn () => $request->session()->get('error'),

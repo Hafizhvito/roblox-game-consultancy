@@ -48,6 +48,21 @@ class RobloxWebsiteTest extends TestCase
     {
         $response = $this->get('/packages');
         $response->assertStatus(200);
+
+        $starter = Package::where('slug', 'starter')->first();
+        $this->assertNotNull($starter);
+        $this->assertEquals(500000, $starter->price_idr_from);
+        $this->assertContains('1 scoped consulting session (60 min)', $starter->features);
+
+        $studio = Package::where('slug', 'studio')->first();
+        $this->assertNotNull($studio);
+        $this->assertEquals(2500000, $studio->price_idr_from);
+        $this->assertContains('2 consulting sessions (90 min each)', $studio->features);
+
+        $brand = Package::where('slug', 'brand')->first();
+        $this->assertNotNull($brand);
+        $this->assertEquals(7500000, $brand->price_idr_from);
+        $this->assertContains('Final price quoted after a scoping call', $brand->features);
     }
 
     public function test_portfolio_index_and_detail_render_successfully(): void

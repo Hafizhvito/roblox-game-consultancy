@@ -12,6 +12,7 @@ use App\Http\Controllers\ProcessController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SnippetController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\Admin;
 use Illuminate\Support\Facades\Route;
 
@@ -36,6 +37,9 @@ Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])
     ->name('contact.store')
     ->middleware(['throttle:contact', 'honeypot']);
+
+// Assistant Chat
+Route::post('/api/chat', [ChatController::class, 'handle'])->middleware('throttle:chat');
 
 // Sitemap
 Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');

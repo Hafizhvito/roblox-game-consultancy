@@ -133,7 +133,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {business.name}. All rights reserved.
           </p>
           <p className="text-center sm:text-right max-w-md text-[11px] leading-relaxed">
-            Independent consultancy. We are not affiliated with, endorsed by, or sponsored by Roblox Corporation.
+            Independent consultancy. We are not affiliated with, endorsed by, or sponsored by Roblox Corporation or Anthropic.
           </p>
         </div>
       </div>

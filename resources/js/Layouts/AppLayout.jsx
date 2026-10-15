@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Head, usePage } from '@inertiajs/react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import ChatWidget from '../Components/ChatWidget';
 
 export default function AppLayout({
   children,
@@ -77,6 +78,8 @@ export default function AppLayout({
       </main>
 
       <Footer />
+
+      <ChatWidget />
     </div>
   );
 }

@@ -216,8 +216,8 @@ end)`,
     let packageName = 'Studio';
     let packageSlug = 'studio';
     let serviceSlug = 'luau-scripting-review';
-    let idrPrice = 5000000;
-    let usdPrice = 350;
+    let idrPrice = 2500000;
+    let usdPrice = 158;
     let duration = '10 to 14 Business Days';
     let deliverables = [];
 
@@ -226,8 +226,8 @@ end)`,
       if (estimatorStage === 'alpha') {
         packageName = 'Starter';
         packageSlug = 'starter';
-        idrPrice = 1500000;
-        usdPrice = 100;
+        idrPrice = 500000;
+        usdPrice = 32;
         duration = '3 to 5 Business Days';
         deliverables = [
           'Annotated Luau codebase review',
@@ -238,8 +238,8 @@ end)`,
       } else if (estimatorStage === 'scaling') {
         packageName = 'Studio';
         packageSlug = 'studio';
-        idrPrice = 5000000;
-        usdPrice = 350;
+        idrPrice = 2500000;
+        usdPrice = 158;
         duration = '10 to 14 Business Days';
         deliverables = [
           'Full architecture and memory profiling',
@@ -250,8 +250,8 @@ end)`,
       } else {
         packageName = 'Brand / Custom';
         packageSlug = 'brand';
-        idrPrice = 15000000;
-        usdPrice = 1000;
+        idrPrice = 7500000;
+        usdPrice = 475;
         duration = '3 to 4 Weeks';
         deliverables = [
           'End-to-end engine stress test and optimization',
@@ -265,8 +265,8 @@ end)`,
       if (estimatorStage === 'alpha') {
         packageName = 'Starter';
         packageSlug = 'starter';
-        idrPrice = 1500000;
-        usdPrice = 100;
+        idrPrice = 500000;
+        usdPrice = 32;
         duration = '3 to 5 Business Days';
         deliverables = [
           'Economy loop design review',
@@ -277,8 +277,8 @@ end)`,
       } else if (estimatorStage === 'scaling') {
         packageName = 'Studio';
         packageSlug = 'studio';
-        idrPrice = 5000000;
-        usdPrice = 350;
+        idrPrice = 2500000;
+        usdPrice = 158;
         duration = '10 to 14 Business Days';
         deliverables = [
           'Mathematical economy spreadsheet model',
@@ -289,8 +289,8 @@ end)`,
       } else {
         packageName = 'Brand / Custom';
         packageSlug = 'brand';
-        idrPrice = 15000000;
-        usdPrice = 1000;
+        idrPrice = 7500000;
+        usdPrice = 475;
         duration = '3 to 4 Weeks';
         deliverables = [
           'Comprehensive multi-tier economy simulation',
@@ -304,8 +304,8 @@ end)`,
       if (estimatorStage === 'alpha') {
         packageName = 'Starter';
         packageSlug = 'starter';
-        idrPrice = 1500000;
-        usdPrice = 100;
+        idrPrice = 500000;
+        usdPrice = 32;
         duration = '3 to 5 Business Days';
         deliverables = [
           'Launch readiness checklist',
@@ -316,8 +316,8 @@ end)`,
       } else if (estimatorStage === 'scaling') {
         packageName = 'Studio';
         packageSlug = 'studio';
-        idrPrice = 5000000;
-        usdPrice = 350;
+        idrPrice = 2500000;
+        usdPrice = 158;
         duration = '10 to 14 Business Days';
         deliverables = [
           '90-day live-ops content calendar',
@@ -328,8 +328,8 @@ end)`,
       } else {
         packageName = 'Brand / Custom';
         packageSlug = 'brand';
-        idrPrice = 15000000;
-        usdPrice = 1000;
+        idrPrice = 7500000;
+        usdPrice = 475;
         duration = '4 to 6 Weeks';
         deliverables = [
           'Full go-to-market launch advisory',
